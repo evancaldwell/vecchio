@@ -1,0 +1,34 @@
+body		  		  {font-family: Helvetica, 'Lucida Grande', Arial; background-color:#F6F6F6; font-size:12px; letter-spacing:1px; } 
+h1, h2, h3, h4, h5    {margin:0px; padding:0px; margin:10px 20px 10px 20px; border-bottom: 1px solid #CCCCCC;}
+label				  {margin:0px; padding:0px; margin:10px 20px 0px 25px; display:block;}
+input, select, textarea	  {margin:0px; padding:0px; margin:5px 5px 5px 25px;}
+#main_outer			  {margin-left:auto; margin-right:auto; width:860px; background-color:#F6F6F6; position:relative;}
+#main_inner			  {margin-top:8px; width:auto; border: 1px solid #CCCCCC; background-image:url(../_images/vecback.jpg); position:relative; background-color:#FFFFFF; background-repeat:no-repeat;}
+#loginfo			  {width:860px; height: 26px; text-align:right; font-size:10px; clear:both;}
+#loginfo img	      {margin-right:8px;}
+.loginbox             {width:300px; background-color:#E7E7E7;  margin:10px 20px 10px 20px ; padding:20px; border:solid 1px #cccccc}
+#admin_logo		      {width:200px; height:60px; background-image:url(../_images/vechlogo.jpg); float:left;}
+#admin_dropmenu		  {width:640px; height:40px; background-color:#004475; float:right;}
+.clearup			  {clear:both;}
+#admin_footer		  {width:840px; height:15px; background-color:#B4B4B4; clear:both; margin-top:8px; padding:10px; text-align:center; color:white; font-size:10px;}
+
+
+.top_order			 {background-color:#004475; color:#FFFFFF; border-right:1px solid: #FFFFFF;}
+.top_order_o		 {background-color:#C98E31; color:#FFFFFF; border-right:1px solid: #FFFFFF;}
+td 			  		 {padding-left:6px; padding-top:5px; padding-bottom:5px; font-weight:bold; border-bottom:1px solid #CCC; border-right:1px solid #CCC; border-left: 1px solid #CCC; }
+td a				 { text-decoration:underline; color:inherit; }
+p					 {margin:0px; padding:0px; margin:10px 20px 0px 25px; display:block;}
+
+/* product edit section */
+.prod				 {width:840px; position:relative;}
+.prod_images		 {margin:2px 0px 4px 10px; border:solid 1px #CCCCCC; padding:8px; width:220px; float:left;}
+.prod_image_upload	 {margin:2px 0px 4px 10px; border:solid 1px #CCCCCC; padding:8px; width:180px; float:left;}
+.prod_menu			 {margin:2px 0px 4px 0px;  border:solid 1px #CCCCCC; padding:0px; width:360px; float:right;}
+.prod_wrap			 {padding:0px 0px 4px 0px; border:solid 1px #123456; margin:0px; width:84px; text-align:center;}
+
+/* ajax search start */
+.half                {width:368px; float:left; border:solid 1px #CCCCCC; padding:14px; margin-left:20px;}
+.ajax_search_inp	 {padding:5px; width:200px;}
+.ajax_search_ul		 {list-style-type: none;}
+.ajax_search_ul li	 {padding-top:18px;}
+hr                   {color:black;}

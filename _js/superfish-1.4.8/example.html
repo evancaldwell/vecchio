@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>A very basic Superfish menu example</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="_css/superfish.css" media="screen">
+		<script type="text/javascript" src="_js/jquery-1.2.6.min.js"></script>
+		<script type="text/javascript" src="_js/hoverIntent.js"></script>
+		<script type="text/javascript" src="_js/superfish.js"></script>
+		<script type="text/javascript">
+
+		// initialise plugins
+		jQuery(function(){
+			jQuery('ul.sf-menu').superfish();
+		});
+
+		</script>
+	</head>
+	<body>
+		<ul class="sf-menu">
+			<li>
+				<a href="#">HOME</a>
+			</li>
+			<li class="current">
+				<a href="#a">SERVICES</a>
+				<ul>
+
+					<li class="current">
+						<a href="#ab">AUDITING SERVICES</a>
+						<ul>
+							<li class="current"><a href="#">Scan/P.O.S. Review</a></li>
+							<li><a href="#aba">Duplicate Payments</a></li>
+							<li><a href="#abb">Common Area Maintenance (C.A.M.)</a></li>
+							<li><a href="#abc">Direct Store Delivery (D.S.D.)</a></li>
+							<li><a href="#abd">Warehouse</a></li>
+						</ul>
+					</li>
+                    <li>
+						<a href="#aa">PROCUREMENT</a>
+					</li>
+					<li>
+						<a href="#aa">PAYABLES</a>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="#">BROCHURES</a>
+				<ul>
+					<li class="current"><a href="#">Scan/P.O.S. Review</a></li>
+					<li><a href="#aba">Duplicate Payments</a></li>
+					<li><a href="#abb">Common Area Maintenance (C.A.M.)</a></li>
+					<li><a href="#abc">Direct Store Delivery (D.S.D.)</a></li>
+					<li><a href="#abd">Warehouse</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">OUR EXPERIENCE</a>
+			</li>
+			<li>
+				<a href="#">CONTACT US</a>
+			</li>	
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+body{
+	margin: 0px;
+	width: 100%;
+	font-family: "Gill Sans", Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	background-color:#A7967E;
+	color:#333333;
+}
+h1, h2, h3, h4, ul {
+	font-family: "Trajan Pro", Georgia, "Times New Roman", serif;
+	margin-left:0px;
+	padding-left:0px;
+}
+
+p{
+	margin-left:0px;
+	padding-left:0px;
+}
+
+#main_box {
+	width:800px;
+	height:500px;
+	background-image:url('../_images/infopage.jpg');
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+#plant_h2 {
+position:absolute;
+top:17px;
+left:35px;
+}
+
+#description {
+position:absolute;
+top:50px;
+left:35px;
+width:700px;
+}
+
+#zones_h3 {
+position:absolute;
+top:159px;
+left:35px;
+}
+
+#zones {
+position:absolute;
+top:185px;
+left:35px;
+}
+#water_h3 {
+position:absolute;
+top:295px;
+left:35px;
+}
+
+#water {
+position:absolute;
+top:320px;
+left:35px;
+}
+
+#view_inventory {
+	position:absolute;
+	top:23px;
+	right:30px;	
+}
+

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*--page specific styles --*/
+#pic_slides {height:380px;background-color:#000; background-image:url(images/slide1.png); position:relative;}
+#intro_copy{width:293px;}
+#pic_info_bar{height:24px; width:920px; background-color:#000; position:absolute; bottom:0px;}
+#pic_info_bar p{color:#fff;}

@@ -1,0 +1,337 @@
+/* Drop Menu */
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+    margin:            0;
+    padding:        0;
+    list-style:        none;
+    z-index:500;
+
+}
+.sf-menu {
+    line-height:    1.4;
+}
+.sf-menu ul {
+    position:        absolute;
+    top:            -999em;
+    width:            8em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+    width: 100%;
+    text-align:center;
+}
+.sf-menu li:hover {
+    visibility:        inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+    float:            left;
+    position:        relative;
+}
+.sf-menu a {
+    display:        block;
+    position:        relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+    left:            0;
+    top:            2.3em; /* match top ul list item height ul 10 sfHover 2.5*/
+    z-index:        99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+    top:            -999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+    left:            8em; /* match ul width */
+    top:            0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+    top:            -999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+    left:            8em; /* match ul width */
+    top:            0;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+    float:            left;
+    margin-bottom:    1em;
+}
+.sf-menu a {
+    border-left:    1px solid transparent;
+    border-top:        1px solid transparent;
+    padding:         .65em .10em;  /*  */ 
+    text-decoration:none;
+	font-size:11px;
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+    color:            #FFF;
+}
+/* Each Item has own background --
+.sf-menu li {
+    background-image:url('../_images/top_bar.png');
+}
+
+.sf-menu li li {
+
+     background:        #303030; 
+}
+.sf-menu li li li {
+ background:        #303030; 
+    
+}
+/* do not need 
+.sf-menu li li li a {
+    border-left: 1px solid #fff;
+    
+}
+*/
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+    /* background:        #81211D; */
+    outline:        0;
+}
+
+
+
+
+
+
+/* Our Trees */
+.ourtrees {
+     background-color:#4C392A;
+     width:144px;
+     text-align:center;
+}
+.ourtrees:focus, .ourtrees:hover, .ourtrees:active {
+    background:    #644A37; 
+    outline:        0;
+}
+.otolives {
+    background-color:#AD874E;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.otolives:focus, .otolives:hover, .otolives:active {
+    background:    #C19657; 
+    outline:        0;
+}
+.otcitrus {
+    background-color:#E68A1A;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.otcitrus:focus, .otcitrus:hover, .otcitrus:active {
+    background:    #FA941A; 
+    outline:        0;
+}
+.otfigs {
+    background-color:#726658;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.otfigs:focus, .otfigs:hover, .otfigs:active {
+    background:    #887968; 
+    outline:        0;
+}
+.otalmonds {
+    background-color:#8A632C;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.otalmonds:focus, .otalmonds:hover, .otalmonds:active {
+    background:    #9C7031; 
+    outline:        0;
+}
+.otpomegranits {
+    background-color:#AE472C;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.otpomegranits:focus, .otpomegranits:hover, .otpomegranits:active {
+    background:    #C65032; 
+    outline:        0;
+}
+.otitalian {
+    background-color:#858A5A;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.otitalian:focus, .otitalian:hover, .otitalian:active {
+    background:    #9AA168; 
+    outline:        0;
+}
+.otcorkscrew {
+    background-color:#603913;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.otcorkscrew:focus, .otcorkscrew:hover, .otcorkscrew:active {
+    background:    #774617; 
+    outline:        0;
+}
+
+
+/* Specs / Info */
+.specsinfo {
+     background-color:#947044;
+     width:144px;
+     text-align:center;
+}
+.specsinfo:focus, .specsinfo:hover, .specsinfo:active {
+    background:    #A37B4A; 
+    outline:        0;
+}
+.spolives {
+    background-color:#603913;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.spolives:focus, .spolives:hover, .spolives:active {
+    background:    #764516; 
+    outline:        0;
+}
+.spcitrus {
+    background-color:#C4A006;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.spcitrus:focus, .spcitrus:hover, .spcitrus:active {
+    background:    #DDB406; 
+    outline:        0;
+}
+.spitalian {
+    background-color:#726658;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.spitalian:focus, .spitalian:hover, .spitalian:active {
+    background:    #887968; 
+    outline:        0;
+}
+.spalmonds {
+    background-color:#8A632C;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.spalmonds:focus, .spalmonds:hover, .spalmonds:active {
+    background:    #9C7031; 
+    outline:        0;
+}
+.sppomegranits {
+    background-color:#AE472C;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.sppomegranits:focus, .sppomegranits:hover, .sppomegranits:active {
+    background:    #C65032; 
+    outline:        0;
+}
+.spfigs {
+    background-color:#858A5A;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.spfigs:focus, .spfigs:hover, .spfigs:active {
+    background:    #9AA168; 
+    outline:        0;
+}
+.spcorkscrew {
+    background-color:#8D8B00;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.spcorkscrew:focus, .spcorkscrew:hover, .spcorkscrew:active {
+    background:    #9F9D00; 
+    outline:        0;
+}
+
+/* Contact Us */
+.contactus {
+     background-color:#5F7188;
+     width:144px;
+     text-align:center;
+}
+.contactus:focus, .contactus:hover, .contactus:active {
+    background:    #6C7F9B; 
+    outline:        0;
+}
+.ctsales {
+    background-color:#594A42;
+    /* for IE */
+    filter:alpha(opacity=90);
+    /* CSS3 standard */
+    opacity:0.9;
+         width:144px;
+}
+.ctsales:focus, .ctsales:hover, .ctsales:active {
+    background:    #6F5C51; 
+    outline:        0;
+}
+
+/* OUR PHILOSOPHY */
+.ourphil {
+     background-color:#8B7C69;
+     width:144px;
+     text-align:center;
+}
+.ourphil:focus, .ourphil:hover, .ourphil:active {
+    background:    #9B8974; 
+    outline:        0;
+}
+
+/* PRESS */
+.press {
+     background-color:#6E737A;
+     width:125px;
+     text-align:center;
+}
+.press:focus, .press:hover, .press:active {
+    background:    #6E737A; 
+    outline:        0;
+}

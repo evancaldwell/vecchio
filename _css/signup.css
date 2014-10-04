@@ -1,0 +1,402 @@
+@charset "UTF-8";
+/* CSS Document */
+/* index page content */
+#sign_container {
+		min-width:1030px;
+		position:relative;
+		width:100%;
+		/* height:459px; */
+		background-image: url(../_images/V_Account_web.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+}
+#signslide {
+	margin-top:7px;
+	background:#DCCFB0;
+	height:457px;
+	width:950px;
+	display:block;
+}
+#my_account {
+	padding:5px;
+	width:1030px;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+}
+#my_account  p {
+	font:11px trajan pro, serif;
+	font-weight:bold;
+	padding:2px 0px 2px 0px;
+	margin:0px;
+}
+.linkcart {
+	margin-bottom:9px;
+}
+#tagged_items {
+	width:690px;
+	float:left;	
+	font-size:12px;
+}
+#tagged_wrap {
+	/* max-height:270px; */
+ 	/* 	overflow:auto; */
+	margin-bottom:9px;
+}
+
+.clear_up {
+	clear:both;
+}
+#enter_freight {
+	width:690px;
+	float:left;	
+	
+	font-size:12px;
+	display:none;
+
+}
+
+#pay_credit_card{
+	width:690px;
+	float:left;	
+	
+	font-size:12px;
+		display:none;
+}
+
+#loadingbar {
+	width:630px;
+	float:left;	
+	font-size:12px;
+	text-align:center;
+	display:none;
+}
+
+#loadingbar img{
+	width:500px;
+	
+}
+
+#pay_e_check{
+	width:690px;
+	float:left;	
+	
+	font-size:12px;
+		display:none;
+}
+
+#pay_check_by_fax{
+	width:690px;
+	float:left;	
+	
+	font-size:12px;
+		display:none;	
+}
+.ti_wrap {
+	width:660px;
+	clear:both;
+}
+.ti_check_top {
+	width:30px;
+		padding: 3px 2px 3px 4px;
+	background-color:#AF9B73;
+	color:white;
+	border: 1px solid #FFF;
+	text-align:center;
+}
+.ti_serial_no_top {
+	width:270px;
+	padding: 4px 2px 4px 4px;
+	background-color:#AF9B73;
+	color:white;
+	border: 1px solid #FFF;
+}
+.ti_description_top {
+	width:210px;
+	padding: 4px 2px 4px 4px;
+	background-color:#AF9B73;
+	color:white;
+	border: 1px solid #FFF;
+}
+.ti_optional_top {
+	width:488px;
+	padding: 4px 2px 4px 4px;
+	background-color:#AF9B73;
+	color:white;
+	border: 1px solid #FFF;
+}
+.ti_price_top {
+	width:100px;
+	padding: 4px 2px 4px 4px;
+	background-color:#AF9B73;
+	color:white;
+	border: 1px solid #FFF;
+	text-align:center;
+}
+
+.ti_check {
+	width:30px;
+	padding: 2px 2px 2px 4px;
+	background-color:#FFF;
+	border: 1px solid #CCCCCC;
+	text-align:center;
+}
+.ti_serial_no {
+	width:270px;
+	padding: 4px 2px 4px 4px;
+	background-color:#FFF;
+	border: 1px solid #CCCCCC;
+}
+.ti_description {
+	width:210px;
+	padding: 4px 2px 4px 4px;
+	background-color:#FFF;
+	border: 1px solid #CCC;
+}
+.ti_optional {
+	width:488px;
+	padding: 4px 2px 4px 4px;
+	background-color:#FFF;
+	border: 1px solid #CCC;
+}
+.ti_price {
+	width:100px;
+	padding: 4px 2px 4px 4px;
+	background-color:#FFF;
+	border: 1px solid #CCC;
+	text-align:center;
+}
+.ti_blank {
+	background-color:#FFF;
+	text-align:right;
+	border: 1px solid #CCC;
+	padding-right:4px;
+	font-weight:bold;
+}
+#total_items {
+	width:250px;
+	float:right;
+
+}
+
+#signflower{
+	width:230px;
+	background:url(../_images/V_SignUp_Image.png) no-repeat #BDA26E;
+	display:block;
+	float:left;
+	height:457px;
+}
+#signbox {
+	float:left;
+	padding:20px 5px 20px 25px;
+	height:417px;
+	width:675px;
+}
+#signleft{
+	float:left;
+	width:300px;
+}
+#signmid{
+	float:left;
+	height:325px;
+	width:2px;
+	background:#FFFFFF;
+	margin:10px 30px 25px;
+}
+#signmidsmall{
+	float:left;
+	height:280px;
+	width:2px;
+	background:#FFFFFF;
+	margin:10px 30px 25px;
+}
+#signright{
+	text-align:center;
+	float:left;
+	width:300px;
+}
+.signblock{
+	width:100%;
+	clear:both;
+}
+.signblock h1{
+	margin:0px 0px 2px;
+	letter-spacing:1px;
+	color:#594A42;
+	font:bold 15px trajan pro, serif;
+}
+.signblock h2{
+	margin:2px 0px 8px 10px;
+	letter-spacing:1px;
+	float:left;
+	color:#6D6E71;
+	font:12px gill sans regular, sans-serif;
+}
+.signblock input[type=submit]{
+	float:right;
+	cursor:pointer;
+	color:#084970;
+	font:11px trajan pro, serif;
+	border: none;
+	margin-right: 1em;
+	padding: 10px 10px;
+	height:31px;
+	letter-spacing:1px;
+	text-decoration: none;
+	-moz-border-radius: 2px;
+	background: #586376;
+	color: white;
+	box-shadow: 0 1px 0 white;
+	-moz-box-shadow: 0 1px 0 white;
+	-webkit-box-shadow: 0 1px 0 white;
+
+}
+.signblock input[type=submit]:hover{
+	background:#084970;
+}
+.signblock input[type=text], .signblock input[type=password]{
+	display: block;
+	margin: .7em 0 0 0;
+	width: 280px;
+	border: 5px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	padding: .6em;
+	background-color:#FFFFFF;
+	outline: none;
+ 
+}
+
+.signblock select{
+	display: block;
+	margin: .7em 0 0 0;
+	width: 290px;
+	border: 5px;
+	padding-top:5px;
+	height:27px;
+	background-color:#FFFFFF;
+}
+#loginslide {
+	background:#DCCFB0;
+	height:310px;
+	width:350px;
+	display:block;
+}
+#logflower{
+	width:217px;
+	background:url(../_images/V_SignUp_Image.png) no-repeat left center #BDA26E;
+	display:block;
+	float:left;
+	height:310px;
+}
+#logbox {
+	float:left;
+	padding:20px;
+	height:270px;
+	width:680px;
+}
+#logleft{
+	float:left;
+	width:342px;
+}
+#logmid{
+	float:left;
+	height:200px;
+	width:2px;
+	background:#FFFFFF;
+	margin:25px 40px 25px;
+}
+#logright{
+	text-align:center;
+	float:left;
+	width:245px;
+}
+.logblock{
+	width:100%;
+	clear:both;
+}
+.logblockr{
+	clear:both;
+}
+.logblock h1{
+	margin:15px 0px 25px;
+	letter-spacing:1px;
+	float:left;
+	color:#594A42;
+	font:bold 18px trajan pro, serif;
+}
+.logblock h2{
+	margin:8px 0px 20px 10px;
+	letter-spacing:1px;
+	float:left;
+	color:#6D6E71;
+	font:12px gill sans regular, sans-serif;
+}
+.logblock h3{
+	letter-spacing:1px;
+	color:#6D6E71;
+	font:12px gill sans regular, sans-serif;
+	text-align:center;
+	padding:20px;
+}
+.logblock a{
+	margin:8px 10px 20px 0px;
+	letter-spacing:1px;
+	float:right;
+	color:#6D6E71;
+	font:12px gill sans regular, sans-serif;
+}
+.logblock input[type=submit]{
+	float:left;
+	cursor:pointer;
+	color:#084970;
+	font:16px trajan pro, serif;
+	border: none;
+	margin-right: 1em;
+	padding: 15px 10px;
+	height:46px;
+	letter-spacing:1px;
+	text-decoration: none;
+	-moz-border-radius: 2px;
+	background: #586376;
+	color: white;
+	box-shadow: 0 1px 0 white;
+	-moz-box-shadow: 0 1px 0 white;
+	-webkit-box-shadow: 0 1px 0 white;
+}
+.logblock input[type=submit]:hover{
+	background:#084970;
+}
+#logright a:hover{
+	background:#084970;
+}
+#logright a {
+	border: none;
+	padding: 15px 10px;
+	height:16px;
+	cursor:pointer;
+	letter-spacing:1px;
+	text-decoration: none;
+	font:16px trajan pro;
+	-moz-border-radius: 2px;
+	background: #586376;
+	color: white;
+	box-shadow: 0 1px 0 white;
+	-moz-box-shadow: 0 1px 0 white;
+	-webkit-box-shadow: 0 1px 0 white;
+
+}
+.logblock input[type=text], .logblock input[type=password] {
+	display: block;
+	margin: 1em 0 0 0;
+	width: 320px;
+	border: 5px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	padding: 1em;
+}
+
+.qq_quant {margin:0;padding:0px; display:inline;}
+.main_item	{font-size:14px; font-weight:bold;}
+.ti_top_item {background-color:#EED19A; padding:5px; color:white;}
+.ti_select_more	{padding:10px;}

@@ -1,0 +1,63 @@
+body{
+	font-family: "Gill Sans", Georgia, "Times New Roman", serif;
+	font-size: 13px;
+}
+#prod_info_box{
+	width:335px;
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	height:258px;
+	border:solid 2px white;
+}
+#prod_info_box .top {
+	width:335px;
+	height:18px;
+	background-image:url('../_images/spec_top.jpg');
+	clear:both;
+}
+#prod_info_box .mid {
+	width:335px;
+	height:213px;
+	background-image:url('../_images/spec_mid.jpg');
+	clear:both;
+}
+#prod_info_box .mid_info{
+	padding:10px 10px 10px 20px;
+	clear:both;
+	
+}
+#prod_info_box .bot {
+	width:335px;
+	height:27px;
+	background-image:url('../_images/spec_bot.jpg');
+	clear:both;
+}
+#prod_info_box table {
+	border:0px;
+}
+#prod_info_box td {
+	padding:4px 5px 4px 0px;
+}
+#prod_info_box td .btn{
+	text-align:right;
+}
+#prod_info_box .your_price{
+	font-size:14px;
+	font-weight:bold;
+}
+#prod_info_box .avail {
+	color: green;
+	font-size: 14px;
+	margin-bottom:8px;
+	padding:0px;
+}
+
+#prod_info_box .tagged {
+	color: #990000;
+	font-size: 14px;
+	margin-bottom:8px;
+	padding:0px;
+}
+
+
