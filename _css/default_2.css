@@ -603,3 +603,63 @@ color:white;
 {
 box-shadow:0px 0px 5px 5px rgba(52,52,52,.75) inset;	
 }
+#ourTreesDynamicProductDisplayInnerDivForm
+{
+margin-left: 420px;
+}
+#ourTreesDynamicProductDisplayInnerDivForm label
+{
+font-size: 13px;
+}
+#ourTreesDynamicProductDisplayInnerDivForm select
+{
+font-size: 25px;
+}
+#ourTreesDynamicProductDisplayInnerDivFormAddToQuoteButton
+{
+margin-top: 10px;
+border: none;
+font-family: "Gill Sans", Georgia, "Times New Roman", serif;
+background-color:rgb(1,114,73);
+width: 100%;
+vertical-align: middle; 
+text-align: center; 
+line-height:48px;
+cursor:pointer;
+border-radius:3px;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+color:white;
+}
+#ourTreesDynamicProductDisplayInnerDivFormAddToQuoteButton:active
+{
+box-shadow:0px 0px 5px 5px rgba(52,52,52,.75) inset;	
+}
+#ourTreesDynamicProductDisplayInnerDivFormFinalizeQuoteButton
+{
+margin-top: 10px;
+border: none;
+font-family: "Gill Sans", Georgia, "Times New Roman", serif;
+background-color:rgb(1,114,73);
+width: 100%;
+vertical-align: middle; 
+text-align: center; 
+line-height:48px;
+cursor:pointer;
+border-radius:3px;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+color:white;
+}
+#ourTreesDynamicProductDisplayInnerDivFormFinalizeQuoteButton:active
+{
+box-shadow:0px 0px 5px 5px rgba(52,52,52,.75) inset;	
+}

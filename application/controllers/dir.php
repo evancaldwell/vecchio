@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+session_start();
 class Dir extends CI_Controller {
-	
+
 	/* ================================
 	
 	Tracking Variables orders.status
@@ -311,6 +311,79 @@ class Dir extends CI_Controller {
 			$return = $this->tracking_model->remove_product_from_order();
 				echo $return['message'];
 			}
+	}
+	
+	function quote(){
+		//$this->User_model->check_expired();
+		//$yn = $this->User_model->has_user_priv();
+		//if(!$yn){
+		//	redirect('dir/log_in/my_account');
+		//}
+		//else{
+			$this->load->library('session');
+			//$productsQuoteIndex = $this->session->userdata('productsQuoteIndex');
+			//$data['productsQuoteIndex'] = $productsQuoteIndex
+			$data['main_section'] = '_chann/quote_view'; 
+			$data['title'] = "VECCHIO Trees";
+			$this->load->view('site_template_2', $data);
+		//}
+	}	
+
+	function add_product_to_quote(){
+		//$this->load->model('user_model');
+		//$pr = $this->user_model->has_user_priv();
+		//if(!$pr){
+		//	redirect('dir/log_in');	
+		//}
+		//else {
+			//$this->load->library('session');
+			//$productsQuoteIndex = $this->session->userdata('productsQuoteIndex');
+			if (isset($_SESSION['quote'])){
+				$quote = $_SESSION['quote'];
+				$product_name = $this->input->post('product_name');
+				$product_quantity = $this->input->post('product_quantity');
+				$product_size = $this->input->post('product_size');
+				$array = array('product_name' => $product_name, 'product_quantity' => $product_quantity, 'product_size' => $product_size);
+				array_push($quote, $array);
+				$_SESSION['quote'] = $quote;
+				echo 'Success';
+			}
+			else{
+				$product_name = $this->input->post('product_name');
+				$product_quantity = $this->input->post('product_quantity');
+				$product_size = $this->input->post('product_size');
+				$quote = array('product_name' => $product_name, 'product_quantity' => $product_quantity, 'product_size' => $product_size);
+				$_SESSION['quote'][0] = $quote;
+				echo 'Success';
+			}
+		//}
+	}
+	
+	function remove_product_from_quote(){	
+		//$this->load->model('user_model');
+		//$pr = $this->user_model->has_user_priv();
+		//if(!$pr){
+		//	redirect('dir/log_in');	
+		//}
+		//else {
+			if (isset($_SESSION['quote'])){
+				$quote = $_SESSION['quote'];
+				$product_name = $this->input->post('product_name');
+				$product_quantity = $this->input->post('product_quantity');
+				$product_size = $this->input->post('product_size');
+				foreach ($quote as $index => $data) {
+					if ($data['product_name'] == $product_name && $data['product_quantity'] == $product_quantity && $data['product_size'] == $product_size) {
+						unset($quote[$index]);
+						$quote = array_values($quote);
+						$_SESSION['quote'] = $quote;
+						echo 'Success';
+					}
+				}
+			}
+			else{
+				echo 'Fail';
+			}
+		//}
 	}
 	
 	function add_remove_box(){
