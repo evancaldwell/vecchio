@@ -29,7 +29,8 @@ if ($mysqli->connect_errno) {
 					}
 				}
 			?>
-		</table>	
+		</table>
+		<div id="ourTreesDynamicProductDisplayInnerDivFormFinalizeQuoteButton">Request Quote</div>
 	</div>
 <script type='text/JavaScript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type='text/CSS' src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/le-frog/jquery-ui.min.css"></script>
@@ -55,6 +56,21 @@ if ($mysqli->connect_errno) {
 								}
 							});
 		 });
+		
+		$(document).on("click","#ourTreesDynamicProductDisplayInnerDivFormFinalizeQuoteButton", function(){
+			<?php  ?>
+			var sender = 
+			$.post("<?php echo base_url()?>index.php/dir/email_quote_v2",
+							function(response){
+								if(response.indexOf("Success") != -1 ){
+									alert('Your email was successfuly sent.');
+									location.reload();
+								} else {
+									alert('Something went wrong and the email was not sent, perhaps you have no products listed for a quote?');
+								}
+							}
+						);
+		});
 	});
 </script>
 

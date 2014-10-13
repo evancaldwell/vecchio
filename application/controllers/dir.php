@@ -386,6 +386,81 @@ class Dir extends CI_Controller {
 		//}
 	}
 	
+	function email_quote_v2(){
+		//$this->load->library('session');
+		//$this->load->model('user_model');
+		//$sesh_client_id = $this->session->userdata('client_id');
+		//$client = $this->user_model->get_user_by_id($sesh_client_id);
+		//$pr = $this->user_model->has_user_priv();
+		//if(!$pr){
+		//	redirect('dir/log_in');	
+		//}
+		//else {
+			if (isset($_SESSION['quote'])){
+				$client['usern_email'] = 'frostyfire03530@gmail.com';
+				$client['fname'] = 'Nathan';
+				$client['lname'] = 'Waters';
+				$client['company'] = 'Home';
+				$client['phone'] = '219.964.8163';
+				$client['bill_address'] = '430 W 5th S Apt 403';
+				$client['bill_city'] = 'Rexburg';
+				$client['bill_state'] = 'ID';
+				$client['bill_zip'] = '83440';
+			
+				$quote   = $_SESSION['quote'];
+				$to      = $client['usern_email'];
+				$subject = 'Quote Requested by '.$client['fname'].' '.$client['lname'];
+				$headers = 'From: noreply@vecchiotrees.com';
+				$message = '
+				<html>
+				<head>
+					<title>Quote Requested by '.$client['fname'].' '.$client['lname'].'</title>
+				</head>
+				<body>
+					<h4>Quote Requested by '.$client['fname'].' '.$client['lname'].'</h4>
+					<h4>Company: '.$client['company'].'</h4>
+					<h4>Phone: '.$client['phone'].'</h4>
+					<strong>Address:</strong> 
+					'.$client['bill_address'].'<br />
+					'.$client['bill_city'].', '.$client['bill_state'].' '.$client['bill_zip']. '<br /><br />
+					<table>
+						<tr>
+							<th>Botanical Name</th>
+							<th>Quantity</th>
+							<th>Size</th>
+						</tr>';
+						foreach ($quote as $product){
+							$message .= "<tr>";
+							foreach ($product as $key => $value){
+								$message .= "<td>".$value."</td>";
+							}
+							$message .= '</tr>';
+						}
+					
+				$message .= '	</table>
+				</body>
+				</html>
+				';
+
+				// To send HTML mail, the Content-type header must be set
+				$headers .= 'MIME-Version: 1.0' . "\r\n";
+				$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+				try{
+					mail($to, $subject, $message, $headers);
+					unset($_SESSION['quote']);
+					echo 'Success';
+				}
+				catch(Exception $e){
+					echo 'Fail';
+				}
+						
+			}
+			else{
+				echo 'Fail';
+			}
+		//}
+	}
+	
 	function add_remove_box(){
 		
 		$response = array('status' => 0);
